@@ -16,6 +16,7 @@ void input(data *mhs, int *banyak){
 		cin.ignore();
 		cout << "Nama\t\t: ";cin >> (*mhs).nama[i];
 		cout << "Alamat\t\t: ";cin >> (*mhs).alamat[i]; 
+		cout << endl;
 	}
 }
 
@@ -26,7 +27,7 @@ void output(data *mhs, int *banyak){
 		cout << "Mahasiswa ke- " << i+1 << endl;
 		cout << "NIM\t\t: " << (*mhs).nim[i] << endl;
 		cout << "Nama\t\t: " << (*mhs).nama[i] << endl;
-		cout << "Alamat\t\t: " << (*mhs).alamat[i] << endl;
+		cout << "Alamat\t\t: " << (*mhs).alamat[i] << endl << endl;
 	}
 }
 
@@ -90,6 +91,7 @@ do {
 			search(mhs,&banyak);
 			break;
 	}
+	cout << endl;
 	cout << "Keluar Database ? ( Y / N )" << endl;
 	cin >> ulang;
 }while(ulang == 'n' || ulang == 'N');
